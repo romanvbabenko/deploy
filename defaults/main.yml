@@ -5,6 +5,9 @@ ansistrano_deploy_from: "{{ playbook_dir }}"
 # Path where the code must be deployed to
 ansistrano_deploy_to: "/var/www/my-app"
 
+# Path to repository cache
+ansistrano_repo_path: "{{ ansistrano_deploy_to }}/repo"
+
 # Folder name for the releases
 ansistrano_version_dir: "releases"
 
